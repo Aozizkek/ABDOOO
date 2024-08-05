@@ -8,7 +8,7 @@ import time
 import json
 app = Flask('')
 
-bot = telebot.TeleBot("7277003019:AAHdUHMhoPfvPJLc03CP5jvLqqUeFiswA4s")
+bot = telebot.TeleBot("7087560091:AAFRq5CQx2o1YAEYeLw2DCQwkrb6mbDei4k")
 
 @bot.message_handler(commands=["start"])
 def startt(message):
@@ -23,7 +23,7 @@ def startt(message):
 اذا كان غير مسموح لك تواصل مع المطور لتفعيل البوت لك🔐🐬 """ 
     response = f"User info:\nID: {user_id}\nName: {first_name} {last_name}\nUsername: @{username}"
     bot.send_message(chat_id=message.chat.id, text=omar)
-    bot.send_message(chat_id="1200745654", text=response)
+    bot.send_message(chat_id="6035997235", text=response)
 @bot.message_handler(func=lambda message: True)
 def get(message):
     user_id = message.from_user.id
@@ -137,7 +137,7 @@ def get_balance(access_token):
 
 @app.route('/')
 def home():
-    return "<b>telegram @X_B_F_F</b>"
+    return "<b>telegram @groupaziz</b>"
 def run():
     app.run(host='0.0.0.0', port=8080)
 def keep_alive():
